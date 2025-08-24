@@ -12,7 +12,7 @@ from modules.dmc_viewer import render_dmc_html, generate_dmc_pdf
 
 st.title("📄 PDF Table Extraction and Validation")
 
-file_type = st.sidebar.selectbox("Select input type", ["pdf", "xlsx"])
+file_type = st.sidebar.selectbox("Select input type", ["xlsx", "pdf"])
 uploaded_input_file = st.sidebar.file_uploader("Upload file", type=[file_type])
 
 df = pd.DataFrame()
