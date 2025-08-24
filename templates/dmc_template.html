@@ -1,0 +1,22 @@
+<html>
+<head>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <h2>{{ student.name }} - Roll No: {{ student.roll_no }}</h2>
+    <p>Class: {{ student.class }} | Section: {{ student.section }}</p>
+    <table border="1">
+    {% for subject in student.subjects %}
+    <tr>
+        <td>{{ subject }}</td>
+        <td>{{ student[subject] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <p>Grade: {{ student.grade }}</p>
+</body>
+</html>
